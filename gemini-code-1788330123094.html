@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bé Ngủ An Lành - Sleep Story Phật Giáo Cho Bé Dưới 5 Tuổi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-cream: #FFFDF9;
+      --lotus-pink-light: #FDF2F4;
+      --lotus-pink: #F472B6;
+      --lotus-pink-dark: #DB2777;
+      --sun-gold-light: #FEF9C3;
+      --sun-gold: #F59E0B;
+      --peace-blue-light: #F0F9FF;
+      --peace-blue: #38BDF8;
+      --leaf-mint-light: #ECFDF5;
+      --leaf-mint: #10B981;
+      --text-main: #334155;
+      --text-muted: #64748B;
+      --shadow-soft: 0 12px 28px -6px rgba(219, 39, 119, 0.1), 0 8px 12px -6px rgba(0, 0, 0, 0.04);
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(255, 253, 249, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 1px dashed #FDE68A;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #E11D48;
+    }
+
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      background: #FFE4E6;
+      border-radius: 50%;
+      font-size: 1.3rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      color: #475569;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #E11D48;
+    }
+
+    .bell-pill {
+      background: var(--sun-gold-light);
+      border: 1px solid #FCD34D;
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: #92400E;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 50px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background-color: var(--lotus-pink-light);
+      color: var(--lotus-pink-dark);
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      margin-bottom: 18px;
+      border: 1px solid #FBCFE8;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      line-height: 1.25;
+      color: #1E293B;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #E11D48;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 530px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #FB7185, #E11D48);
+      color: #FFFFFF;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.05rem;
+      box-shadow: 0 10px 20px -4px rgba(225, 29, 72, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px -4px rgba(225, 29, 72, 0.45);
+    }
+
+    .btn-secondary {
+      background: #FFFFFF;
+      color: #475569;
+      padding: 14px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      border: 1.5px solid #CBD5E1;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: #F8FAFC;
+    }
+
+    .hero-lotus-art {
+      background: linear-gradient(180deg, #F0FDF4 0%, #FEF2F2 100%);
+      border-radius: 36px;
+      padding: 44px 30px;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-soft);
+      border: 4px solid #FFFFFF;
+    }
+
+    .art-zen-moon {
+      font-size: 4.8rem;
+      display: block;
+      margin-bottom: 12px;
+      animation: floatLotus 4s ease-in-out infinite;
+    }
+
+    @keyframes floatLotus {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+
+    .sleeping-buddies {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .lotus-pill {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #047857;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Section Utilities */
+    section {
+      padding: 65px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 50px;
+    }
+
+    .section-header .tag {
+      display: inline-block;
+      padding: 5px 16px;
+      background: var(--sun-gold-light);
+      color: #92400E;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      border: 1px solid #FDE68A;
+    }
+
+    .section-header h2 {
+      font-size: 2.2rem;
+      color: #1E293B;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Story Cards Showcase */
+    .stories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .story-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      border: 1px solid #F1F5F9;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .story-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .story-origin-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      width: fit-content;
+    }
+
+    .tag-lotus { background: #FCE7F3; color: #BE185D; }
+    .tag-amitabha { background: #FEF3C7; color: #B45309; }
+    .tag-pearl { background: #E0F2FE; color: #0369A1; }
+
+    .story-emoji {
+      font-size: 3rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .story-card h3 {
+      font-size: 1.3rem;
+      color: #1E293B;
+      margin-bottom: 10px;
+    }
+
+    .story-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+
+    .btn-listen-sample {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      background: var(--bg-cream);
+      border: 1px solid #E2E8F0;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #475569;
+      transition: all 0.2s;
+    }
+
+    .btn-listen-sample:hover {
+      background: #FFF1F2;
+      border-color: #FECDD3;
+      color: #E11D48;
+    }
+
+    /* Values Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .value-card {
+      background: #FFFFFF;
+      padding: 34px 26px;
+      border-radius: var(--radius-lg);
+      border: 1px solid #F1F5F9;
+      box-shadow: var(--shadow-soft);
+      text-align: center;
+    }
+
+    .value-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+    }
+
+    .icon-chime { background: var(--sun-gold-light); }
+    .icon-water { background: var(--peace-blue-light); }
+    .icon-sprout { background: var(--leaf-mint-light); }
+
+    .value-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #1E293B;
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Audio Preview Card */
+    .audio-showcase {
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 44px 40px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid #F1F5F9;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .audio-player-mockup {
+      background: linear-gradient(135deg, #FFFBEB, #FEF2F2);
+      border-radius: 24px;
+      padding: 28px;
+      border: 1px dashed #FCD34D;
+    }
+
+    .player-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .play-circle {
+      width: 54px;
+      height: 54px;
+      background: #E11D48;
+      color: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      box-shadow: 0 4px 12px rgba(225, 29, 72, 0.35);
+      flex-shrink: 0;
+    }
+
+    .player-track-info h4 {
+      font-size: 1.1rem;
+      color: #1E293B;
+    }
+
+    .player-track-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .progress-bar-wrap {
+      height: 8px;
+      background: #FED7AA;
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .progress-bar-fill {
+      width: 38%;
+      height: 100%;
+      background: #E11D48;
+      border-radius: var(--radius-full);
+    }
+
+    .time-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #94A3B8;
+      font-weight: 600;
+    }
+
+    /* About Project */
+    .about-box {
+      background: linear-gradient(135deg, #FDF2F4, #FFFBEB);
+      border-radius: 32px;
+      padding: 44px 38px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .author-card {
+      background: #FFFFFF;
+      padding: 28px 24px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .author-avatar {
+      width: 90px;
+      height: 90px;
+      background: var(--lotus-pink-light);
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      border: 3px solid #FBCFE8;
+    }
+
+    .author-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #1E293B;
+    }
+
+    .author-role {
+      font-size: 0.85rem;
+      color: #DB2777;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .about-content h3 {
+      font-size: 1.8rem;
+      color: #1E293B;
+      margin-bottom: 16px;
+    }
+
+    .about-content p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+
+    .feedback-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 26px;
+      border: 1px solid #F1F5F9;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .stars {
+      color: #F59E0B;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    .feedback-text {
+      font-style: italic;
+      color: #475569;
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+
+    .mom-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mom-avatar {
+      width: 44px;
+      height: 44px;
+      background: var(--lotus-pink-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .mom-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #1E293B;
+    }
+
+    .mom-child {
+      font-size: 0.8rem;
+      color: #94A3B8;
+    }
+
+    /* Footer */
+    footer {
+      background: #0F172A;
+      color: #F8FAFC;
+      padding: 50px 0 30px;
+      margin-top: 50px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .footer-brand h4 {
+      font-size: 1.45rem;
+      color: #FDA4AF;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      color: #94A3B8;
+      font-size: 0.95rem;
+      max-width: 420px;
+    }
+
+    .footer-action-box h5 {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+
+    .btn-download-sample {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #E11D48;
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: #64748B;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .hero-grid, .audio-showcase, .about-box, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .stories-grid, .values-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Header & Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <div class="logo">
+        <span class="logo-badge">🪷</span>
+        <span>Bé Ngủ An Lành</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Trang chủ</a></li>
+        <li><a href="#stories">Tủ truyện</a></li>
+        <li><a href="#values">Ý nghĩa</a></li>
+        <li><a href="#preview">Nghe thử</a></li>
+        <li><a href="#about">Về đồ án</a></li>
+      </ul>
+      <div class="bell-pill">
+        <span>🔔</span> Chuông gió an tĩnh
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge-tag">
+          <span>🪷 Tác phẩm tốt nghiệp • Chuyên ngành Sáng tạo</span>
+        </div>
+        <h1>Gieo hạt lành và vỗ về giấc mơ con qua <span>những câu chuyện an yên</span></h1>
+        <p>Tác phẩm chuyển thể những điển tích sâu sắc trong Kinh Pháp Hoa và Kinh Vô Lượng Thọ thành ngôn từ đồng thoại trong sáng, dịu ngọt dành cho bé dưới 5 tuổi. Giúp con chìm vào giấc ngủ thanh thản và nuôi dưỡng lòng từ bi đầu đời.</p>
+        <div class="hero-actions">
+          <a href="#preview" class="btn-primary">🎧 Nghe thử câu chuyện</a>
+          <a href="#stories" class="btn-secondary">📖 Khám phá tủ truyện</a>
+        </div>
+      </div>
+
+      <div class="hero-lotus-art">
+        <span class="art-zen-moon">🌙🪷</span>
+        <div class="sleeping-buddies">
+          <span>🐰💤</span>
+          <span>🦌✨</span>
+          <span>🕊️</span>
+        </div>
+        <div class="lotus-pill">
+          🌿 Tâm an lạc • Giấc ngủ tròn đầy yêu thương
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Showcase: Tủ truyện chuyển thể kinh điển -->
+  <section id="stories" style="background: #FAFAF9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Truyện kể ru ngủ cho bé</span>
+        <h2>Tủ truyện sen hồng ru bé ngủ say</h2>
+        <p>Các tích truyện kinh điển được gạn lọc thành hình ảnh bạn thú, cánh hoa, vầng trăng gần gũi với lứa tuổi mầm non.</p>
+      </div>
+
+      <div class="stories-grid">
+        <!-- Story 1 -->
+        <div class="story-card">
+          <div>
+            <span class="story-origin-tag tag-lotus">Lấy cảm hứng từ Kinh Pháp Hoa</span>
+            <span class="story-emoji">🐂🌈</span>
+            <h3>Chiếc Xe Trâu Bảy Sắc</h3>
+            <p>Câu chuyện biến thể từ dụ ngôn "Ngôi nhà lửa", kể về chiếc xe trâu bồng bềnh chở đầy đồ chơi ấm áp đón các bạn thú nhỏ ra bãi cỏ thơm ngát dưới trăng.</p>
+          </div>
+          <a href="#preview" class="btn-listen-sample">🎵 Nghe mẫu 3 phút</a>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+          <div>
+            <span class="story-origin-tag tag-amitabha">Lấy cảm hứng từ Kinh Vô Lượng Thọ</span>
+            <span class="story-emoji">🪷⭐</span>
+            <h3>Ao Sen Ánh Nắng Vàng</h3>
+            <p>Mô phỏng cảnh cõi Cực Lạc thành một hồ sen lung linh sắc màu, nơi có những chú cá hiền lành bơi lội và làn nước mát lành hát bài ca vỗ về giấc mơ.</p>
+          </div>
+          <a href="#preview" class="btn-listen-sample">🎵 Nghe mẫu 3 phút</a>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+          <div>
+            <span class="story-origin-tag tag-pearl">Dụ ngôn Viên Ngọc Trong Túi</span>
+            <span class="story-emoji">💎🐰</span>
+            <h3>Hòn Ngọc Sáng Của Thỏ Con</h3>
+            <p>Nhắc bé rằng trong trái tim mỗi bạn nhỏ luôn có một viên ngọc yêu thương lấp lánh để luôn cảm thấy an toàn, ấm áp dù trong đêm tối.</p>
+          </div>
+          <a href="#preview" class="btn-listen-sample">🎵 Nghe mẫu 3 phút</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Giá trị dành cho mẹ bỉm & bé -->
+  <section id="values">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Góc nhìn khoa học & tâm lý</span>
+        <h2>Vì sao mẹ nên chọn truyện thiền cho bé?</h2>
+        <p>Không giáo điều, không khó hiểu — mọi câu chuyện được thiết kế để điều hòa nhịp thở và làm dịu hệ thần kinh non nớt.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon icon-chime">🔔</div>
+          <h3>Nhịp điệu chậm rãi, an tĩnh</h3>
+          <p>Tốc độ đọc chậm kết hợp cùng âm thanh chuông xoay, tiếng suối reo nhẹ giúp sóng não của bé dần chuyển sang trạng thái thư giãn ngủ sâu.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon icon-water">🪷</div>
+          <h3>Ngôn từ trong sáng, dễ hiểu</h3>
+          <p>Các khái niệm triết lý được tinh giản thành bài học về sự sẻ chia, lòng biết ơn mẹ cha, tình thương loài vật với ngôn ngữ mầm non tự nhiên.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon icon-sprout">🌱</div>
+          <h3>Gieo mầm hạt giống thiện lương</h3>
+          <p>Tâm trí trước giờ ngủ của trẻ là mảnh đất màu mỡ nhất. Những lời chúc an lành giúp con thức dậy với nụ cười sảng khoái và tâm hồn tươi vui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Audio Player Preview -->
+  <section id="preview" style="background: #FAFAF9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Trải nghiệm âm thanh</span>
+        <h2>Cùng con lắng nghe giọng đọc êm đềm</h2>
+        <p>Đoạn trích ru ngủ kết hợp âm hưởng chuông gió và tiếng thở an yên.</p>
+      </div>
+
+      <div class="audio-showcase">
+        <div style="background: linear-gradient(135deg, #FDE047, #F472B6); border-radius: 24px; padding: 32px; color: #FFFFFF; min-height: 280px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span style="background: rgba(0, 0, 0, 0.15); padding: 4px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700;">Trích đoạn ru ngủ đêm nay</span>
+            <h3 style="font-size: 1.7rem; margin-top: 14px; color: #FFFFFF;">Búp Sen Con Khép Cánh Chờ Trăng</h3>
+          </div>
+          <p style="font-size: 0.95rem; opacity: 0.95;">
+            "Hít một hơi thật sâu... thở ra nhẹ nhẹ... Búp sen nhỏ khép cánh rồi, bé con nhắm mắt ngủ ngoan nhé..."
+          </p>
+        </div>
+
+        <div>
+          <div class="audio-player-mockup">
+            <div class="player-row">
+              <div class="play-circle">▶</div>
+              <div class="player-track-info">
+                <h4>Đoạn đọc mẫu ru ngủ (3 phút)</h4>
+                <p>Giọng kể ấm áp • Nhạc nền thiền tịnh</p>
+              </div>
+            </div>
+
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill"></div>
+            </div>
+            <div class="time-info">
+              <span>01:10</span>
+              <span>03:00</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+            <span style="font-size: 0.85rem; background: var(--leaf-mint-light); color: #065F46; padding: 6px 14px; border-radius: var(--radius-full); font-weight: 700;">✓ Không chèn quảng cáo</span>
+            <span style="font-size: 0.85rem; background: var(--peace-blue-light); color: #0369A1; padding: 6px 14px; border-radius: var(--radius-full); font-weight: 700;">✓ Tần số âm thanh dịu mắt an toàn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. About Project & Graduation context -->
+  <section id="about">
+    <div class="container">
+      <div class="about-box">
+        <div class="author-card">
+          <div class="author-avatar">🪷</div>
+          <div class="author-name">Tác Giả Đồ Án</div>
+          <div class="author-role">Sinh viên Tốt nghiệp</div>
+          <p style="font-size: 0.85rem; color: #64748B;">Đề tài: <em>Chuyển thể triết lý Phật giáo thành Sleep Story nuôi dưỡng giấc ngủ và lòng trắc ẩn cho trẻ mầm non.</em></p>
+        </div>
+
+        <div class="about-content">
+          <h3>Tâm huyết gửi trao từng trang sách</h3>
+          <p>Kinh Pháp Hoa dạy chúng ta nhìn thấy Phật tính trong mọi sinh linh, còn Kinh Vô Lượng Thọ mở ra thế giới an lạc, thanh tịnh. Mình tin rằng những vẻ đẹp tinh thần ấy hoàn toàn có thể đến với các em bé dưới 5 tuổi theo cách giản dị nhất.</p>
+          <p>Đồ án này là chiếc cầu nối nhỏ, giúp các mẹ bỉm sữa bận rộn có thêm một phương tiện ấm áp để cùng con kết nối yêu thương, buông bỏ muộn phiền mỗi ngày trước khi tắt đèn đi ngủ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Mom Reviews -->
+  <section style="background: #FAFAF9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Phản hồi từ các mẹ</span>
+        <h2>Góc chia sẻ từ những người mẹ an yên</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="feedback-card">
+          <div class="stars">★★★★★</div>
+          <div class="feedback-text">"Nghe giọng đọc câu chuyện Ao Sen Vàng dịu ơi là dịu, ngay cả người lớn nghe còn thấy nhẹ lòng huống chi các bé. Bé Miu nhà mình 3 tuổi nghe một lúc là ôm gối ngủ thin thít."</div>
+          <div class="mom-profile">
+            <div class="mom-avatar">🌸</div>
+            <div>
+              <div class="mom-name">Mẹ Diệu Tâm</div>
+              <div class="mom-child">Bé Miu (3 tuổi)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-card">
+          <div class="stars">★★★★★</div>
+          <div class="feedback-text">"Mình thích cách bạn tác giả chuyển thể ẩn dụ chiếc xe trâu trong kinh Pháp Hoa thành câu chuyện chiếc xe cầu vồng đón bạn bè. Rất nhân văn, trong sáng và cực kỳ dễ hiểu đối với con nít."</div>
+          <div class="mom-profile">
+            <div class="mom-avatar">🌿</div>
+            <div>
+              <div class="mom-name">Mẹ Tuệ An</div>
+              <div class="mom-child">Bé Tép (4.5 tuổi)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>🪷 Bé Ngủ An Lành</h4>
+          <p>Tác phẩm tốt nghiệp ứng dụng nghệ thuật kể chuyện thiền tịnh hỗ trợ giấc ngủ đầu đời của trẻ thơ. Chúc mọi bé con luôn ngủ ngoan trong niềm an lạc!</p>
+        </div>
+        <div class="footer-action-box">
+          <h5>Tài liệu & Bản đọc thử đồ án</h5>
+          <p style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 16px;">Tác phẩm phục vụ mục đích nghiên cứu tốt nghiệp và phi thương mại.</p>
+          <a href="#preview" class="btn-download-sample">📥 Tải bản tóm tắt đồ án (PDF)</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 Tác phẩm Tốt nghiệp - Sleep Story Phật Giáo Cho Bé Dưới 5 Tuổi.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
